@@ -1,0 +1,13 @@
+<component name="ProjectCodeStyleConfiguration">
+  <code_scheme name="Project" version="173">
+    <CsvCodeStyleSettings>
+      <option name="SPACE_AFTER_SEPARATOR" value="true" />
+      <option name="TRIM_LEADING_WHITE_SPACES" value="true" />
+      <option name="TRIM_TRAILING_WHITE_SPACES" value="true" />
+      <option name="LEADING_WHITE_SPACES" value="true" />
+    </CsvCodeStyleSettings>
+    <HoconCodeStyleSettings>
+      <option name="OBJECTS_WRAP" value="5" />
+    </HoconCodeStyleSettings>
+  </code_scheme>
+</component>

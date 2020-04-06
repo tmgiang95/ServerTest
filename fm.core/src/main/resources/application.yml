@@ -1,0 +1,43 @@
+spring:
+  profiles:
+    active: development
+    include:
+      - db
+      - profile
+
+#  data:
+#    rest:
+#      base-path: /api
+
+  servlet:
+    multipart:
+      max-file-size: 128KB
+      max-request-size: 128KB
+
+  datasource:
+    hikari:
+      connectionTimeout: 30000
+      idleTimeout: 600000
+      maxLifetime: 1800000
+
+server:
+  http:
+    port: 8081
+  port: 8080
+  ssl:
+    key-store: classpath:tls/server.jks
+    key-store-password: secret
+    key-password: secret
+    protocol: TLS
+    enabled: true
+
+  http2:
+    enabled: true
+
+  compression:
+    # Enable response compression
+    enabled: true
+    # The comma-separated list of mime types that should be compressed
+    mime-types: text/html,text/xml,text/plain,text/css,text/javascript,application/javascript,application/json
+    # Compress the response only if the response size is at least 1KB
+    min-response-size: 1024
